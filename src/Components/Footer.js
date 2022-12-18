@@ -3,7 +3,7 @@ import bgImg from "./assets/logocolor.jpg"
 
 export default function Footer() {
   return (
-    <footer style={{backgroundColor:"#F8F7FA"}} className="px-5">
+    <footer style={{backgroundColor:"#F8F7FA"}} className="px-md-5">
         <div className="container">
             <div className="d-flex flex-md-row flex-column gap-md-0 gap-4 py-5 justify-content-between">
             <a href="#"><img src={bgImg} width={150} height={50} alt="footer logo" /></a>
@@ -32,7 +32,8 @@ export default function Footer() {
             <hr />
 
             <div className="py-2 text-center text-muted">
-                <h6>Copyright © era-coding.com 2019 - 2022 | Tax ID 691-832-587 </h6>
+                <h6>Copyright © agendacultural.es 2022 - 2023</h6>
+                <p className='m-0'>Developed By <a href="https://era-coding.com/" className='fw-bold text-decoration-none text-muted'>Era Coding</a></p>
             </div>
         </div>
     </footer>

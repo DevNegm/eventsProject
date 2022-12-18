@@ -5,6 +5,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+.main {
+  min-height:70vh;
+}
 
 .header-img {
   transition:all 250ms ease-in-out;
@@ -50,20 +53,34 @@
 .primary-color {
   color:#F05537;
 }
+.bg-color {
+  background-color:#F05537;
+
+}
 
 .event-card {
   box-shadow: 0 16px 64px -16px rgba(46,55,77,.1);
+  border:1px solid transparent;
   transition:all 250ms ease-in-out;
   -webkit-transition:all 250ms ease-in-out;
   -moz-transition:all 250ms ease-in-out;
   -ms-transition:all 250ms ease-in-out;
   -o-transition:all 250ms ease-in-out;
+  height:450px;
 }
 .event-card:hover {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
-  transform:scale(0.95);
-  -webkit-transform:scale(0.95);
-  -moz-transform:scale(0.95);
-  -ms-transform:scale(0.95);
-  -o-transform:scale(0.95);
+  border:1px solid #F05537;
+}
+.card-desc {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+.event-title {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
 }

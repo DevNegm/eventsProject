@@ -1,22 +1,55 @@
-import React from 'react'
-import bgImg from "./assets/logocolor.jpg"
+import React from "react";
+import { Link } from "react-router-dom";
+import bgImg from "./assets/logocolor.jpg";
 
 export default function Navbar() {
   return (
-    <nav className='p-3' style={{backgroundColor:"#F8F7FA"}}>
-        <div className="container">
-          <div className="d-flex align-items-center justify-content-between">
-          <a href="" className='col-2 fs-4 fw-bold'>
-                <img src={bgImg} width="100" alt="navbar logo" />
-            </a>
-            <div className=" d-flex gap-4">
-                <a href="#" className='text-decoration-none fw-bold primary-color'>Home</a>
-                <a href="#" className='text-decoration-none fw-bold primary-color'>About</a>
-                <a href="#" className='text-decoration-none fw-bold primary-color'>Events</a>
-            </div>
-          </div>
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <div className="container">
+        <Link to="/" className="col-2 fs-4 fw-bold">
+          <img src={bgImg} width="100" alt="navbar logo" />
+        </Link>
+        <button
+          className="navbar-toggler border-0"
+          style={{ boxShadow: "none" }}
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav gap-4 ms-auto mb-2 mb-lg-0">
+            <li className="nav-item">
+              <Link
+                to="/"
+                className=" text-decoration-none fw-bold primary-color"
+              >
+                Home
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                to="/"
+                className=" text-decoration-none fw-bold primary-color"
+              >
+                About
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                to="/"
+                className=" text-decoration-none fw-bold primary-color"
+              >
+                Events
+              </Link>
+            </li>
+          </ul>
         </div>
-
+      </div>
     </nav>
-  )
+  );
 }
