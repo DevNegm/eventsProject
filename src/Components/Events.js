@@ -4,8 +4,8 @@ import { HiLocationMarker } from "react-icons/hi";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 export default function Events() {
-  const APIURL = "https://api.calendariocultural.era-coding.com/api";
-  const key = "d83fcb5bbf8bfa4b05a373b2694320e211ea26f6";
+  const APIURL = "https://api.calendariocultural.era-coding.com/api/";
+  const key = "edb8224c81b5688bf315026c8ecab9fa1bb6f84f";
   const [data, setData] = useState([]);
   const [categories, setCategories] = useState([]);
   const [subCategories, setSubCategories] = useState([]);
@@ -89,7 +89,7 @@ export default function Events() {
           <h2 className="primary-color fs-4 mb-3">Events</h2>
 
           {data.length > 0 ? (
-            data?.map((event, index) => {
+            data?.map((event) => {
               return (
                 <Link
                   to={`/event/${event.slug}`}

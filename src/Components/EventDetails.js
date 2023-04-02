@@ -34,7 +34,7 @@ export default function EventDetails() {
         <div className="col-md-12">
           <h2 className="fs-md-2 my-3 fw-bold primary-color">{data.title}</h2>
           <div className="d-flex justify-content-between align-items-center flex-wrap">
-            <p className="m-0 fw-bold fs-md-5 text-muted d-flex align-items-center gap-2"><AiOutlineClockCircle/>21:00 {data?.date}</p>
+            <p className="m-0 fw-bold fs-md-5 text-muted d-flex align-items-center gap-2"><AiOutlineClockCircle/>21:000 {data?.date}</p>
             <p className="m-0 fw-bold fs-md-5 text-muted d-flex align-items-center gap-2"><HiLocationMarker className="fs-3"/>{data?.location}</p>
             
           </div>
